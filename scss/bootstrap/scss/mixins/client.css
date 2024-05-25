@@ -1,0 +1,28 @@
+/* CSS for client logos */
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add gap between client logos */
+}
+
+.client-logo {
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.client-logo img {
+    max-width: 100%;
+    display: block; /* Ensure proper image display */
+}
+
+.placeholder {
+    width: 150px; /* Same width as client logos */
+    height: 150px; /* Set height to maintain aspect ratio */
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}

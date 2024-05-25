@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Best Interior Designers in Chennai - The Decors</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Interior Designers, Chennai, The Decors, Home Decor, Interior Design Projects" name="keywords">
+    <meta content="The Decors offers top-notch interior design services in Chennai. Explore our portfolio to see some of our best projects." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        .navbar-brand img {
+            width: 120px;
+            height: auto;
+            margin-top: -10px;
+        }
+
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-chat img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Custom Carousel Styles */
+        .custom-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        .custom-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        @media (min-width: 768px) {
+            .carousel-item {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .carousel-item {
+                flex: 0 0 33.33%;
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 576px) {
+            .navbar .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar .nav-item {
+                margin-bottom: 10px;
+            }
+
+            .footer .row {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WhatsApp Chat Option -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/7200067012" target="_blank">
+            <img src="img/whatsapp-icon.png" alt="WhatsApp Chat">
+        </a>
+    </div>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container position-relative" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Your Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="Gallery.html" class="nav-item nav-link active">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Our Projects</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-outline-primary" href="index.html">Home</a>
+                        <i class="fas fa-angle-double-right text-primary mx-2"></i>
+                        <a class="btn btn-outline-primary disabled" href="">Our Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Projects Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col text-center mb-4">
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Projects</h6>
+                    <h1 class="mb-4">Some Of Our Awesome Interior Designing Projects</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".first">Complete</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".second">Running</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".third">Upcoming</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Custom Carousel Container -->
+            <div id="portfolio-container" class="container-fluid">
+                <div class="container custom-carousel">
+                    <div class="carousel-item first">
+                        <!-- Your project content -->
+                    </div>
+                    <div class="carousel-item second">
+                        <!-- Your project content -->
+                    </div>
+                    <div class="carousel-item third">
+                        <!-- Your project content -->
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+            <!-- Address and Follow Us Section -->
+            <div class="row">
+                <!-- Address Section -->
+                <div class="col-lg-4 col-md-6 mb-5 text-center align-items-center d-flex flex-column">
+                    <h4 class="text-primary mb-4">Get In Touch</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <p><i class="fa fa-map-marker-alt mr-2"></i>No,17/93,<br>
+                                Pillaiyar koil street,<br>
+                                Lakshmipuram,<br>
+                                Chrompet,<br>
+                                Chennai - 600 044 .
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p><i class="fa fa-phone-alt mr-2"></i>Landline : 044 22412515 <br>   Mobile : +91 72000 67012<br>    
+                                Whatsapp : +91 72000 67012
+                            </p>
+                            <p><i class="fa fa-envelope mr-2"></i> info@thedecors.in</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location Section -->
+                <div class="col-lg-4 col-md-6 mb-5 text-center align-items-center">
+                    <h4 class="text-primary mb-4">Location</h4>
+                    <a href="https://goo.gl/maps/" class="btn btn-outline-primary">Click here to view location</a>
+                </div>
+                <!-- Follow Us Section -->
+                <div class="col-lg-4 col-md-6 mb-3 text-center">
+                    <h4 class="text-primary mb-4">Follow Us</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                            <a class="btn btn-outline-light rounded-circle text-center mb-3" style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;" href="https://twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-outline-light rounded-circle text-center mb-3" style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;" href="https://facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-outline-light rounded-circle text-center mb-3" style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;" href="https://instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="row justify-content-center pt-3">
+                <div class="col-md-6 text-center text-md-center">
+                    <p class="m-0 text-white">&copy; 2024 The Decors. All Rights Reserved.</p>
+                    <p class="m-0 text-white">Designed by <a href="https://thedecors.in" class="text-primary">The Decors</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Portfolio isotope and filter
+            var portfolioIsotope = $('.container').isotope({
+                itemSelector: '.carousel-item',
+                layoutMode: 'fitRows'
+            });
+
+            $('#portfolio-flters li').on('click', function() {
+                $("#portfolio-flters li").removeClass('active');
+                $(this).addClass('active');
+
+                portfolioIsotope.isotope({ filter: $(this).data('filter') });
+            });
+        });
+    </script>
+</body>
+
+</html>
