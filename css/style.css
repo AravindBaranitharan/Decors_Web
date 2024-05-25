@@ -9668,37 +9668,4 @@ h6 {
     width: 60px; /* Adjust as needed */
     height: auto;
 }
-.client-logos-carousel {
-  display: flex;
-  overflow-x: hidden; /* Hide overflow */
-  position: relative; /* Needed for absolute positioning of logos */
-  margin-bottom: 20px; /* Add margin to separate from other content */
-}
 
-.client-logos-carousel .col-lg-2 {
-  flex: 0 0 auto;
-  margin: 0 5px; /* Adjust as needed for spacing between logos */
-  animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-      transform: translateX(0); /* Start position */
-  }
-  100% {
-      transform: translateX(calc(-100% - 10px)); /* End position (adjust for spacing) */
-  }
-}
-/* For small devices (576px and below) */
-@media (max-width: 576px) {
-  .client-logos-carousel {
-      overflow-x: auto;
-      white-space: nowrap; /* Prevent wrapping */
-  }
-
-  .client-logos-carousel .col-lg-2 {
-      flex: none; /* Disable flex so logos won't stack */
-      display: inline-block;
-      margin-right: 5px; /* Adjust as needed for spacing between logos */
-  }
-}
